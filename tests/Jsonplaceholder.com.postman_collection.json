@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "6dcc40e5-f9a1-4dd8-a5a0-44b11760d29a",
-		"name": "Runnig Test API with jenkins",
+		"name": "Jsonplaceholder.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -26,6 +26,28 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6a4313c5-11e5-4099-8a6e-3c12aee139ab",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cb1b3ec8-83e0-4ad9-804d-a9fc68a31b72",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"protocolProfileBehavior": {}
