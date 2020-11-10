@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6dcc40e5-f9a1-4dd8-a5a0-44b11760d29a",
+		"_postman_id": "3fe84a4a-91a8-4b39-b2de-efdd474c42cf",
 		"name": "Jsonplaceholder.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "41c8fe80-ccd5-4eb6-bfb9-e83039483c1a",
+						"id": "e0be32d4-eef8-4820-ae79-ee0de93c7207",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -55,8 +55,16 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3de4bdba-707a-4e22-aed3-b8a4d5ca5691",
+						"id": "1664c1b3-883a-4855-b755-3a8570664c4f",
 						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
 							""
 						],
 						"type": "text/javascript"
@@ -93,7 +101,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "0fd1b8a0-8188-4436-928b-c696999d09e5",
+						"id": "98d96a6c-d092-4ec1-a1f2-d9fd5b18eb60",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -127,6 +135,20 @@
 		},
 		{
 			"name": "teste",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "942e7533-9dda-4148-9271-f4b37a4246d2",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -141,7 +163,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6a4313c5-11e5-4099-8a6e-3c12aee139ab",
+				"id": "00978519-c550-4000-a1d4-dd6d99944f8d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -151,7 +173,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "cb1b3ec8-83e0-4ad9-804d-a9fc68a31b72",
+				"id": "702c93c9-bf4a-46b7-a8eb-e4a8a134eba4",
 				"type": "text/javascript",
 				"exec": [
 					""
